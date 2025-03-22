@@ -1,0 +1,37 @@
+<!-- display content on browser after 3 second -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function myfun(){
+        // const p=document.getElementById('p').innerHTML="lju"}
+        // setTimeout(myfun,3000)
+
+        // var a=2
+        // var b=5
+        // function add(){
+        //     sum=a+b
+        //     document.getElementById('sum').innerHTML=sum
+        //     a++
+        //     b++
+        // }
+        // setTimeout(add,3000)
+        function add(a,b){
+            obj=document.getElementById('sum').innerHTML=a+b;
+        }
+        a=2
+        b=5
+        setInterval(function(){
+            add(++a,++b);
+        },1000)
+    </script>
+    
+</head>
+<body>
+    <!-- <p id="p"></p> -->
+    <p id="sum"></p>
+</body>
+</html>
